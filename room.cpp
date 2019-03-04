@@ -372,6 +372,7 @@ void Room::event_display() {
          cout <<"You got the gold!!! hahahaha. You have to find  a way out of the cave"<<endl;
      }
      if ((this->x==this->events_3->return_xco()) && (this->y==this->events_3->return_yco())  ) {
+         this->room_grid.at(this->y).at(this->x) = "   ";
          do {
              this->x = rand() % this->cols;
              this->y = rand() % this->rows;
