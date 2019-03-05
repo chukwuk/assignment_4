@@ -41,7 +41,7 @@ int Bats::return_yco() {
 }
 
 void Bats::display_event() {
-    cout <<"You hear wings flapping!!!"<<endl;
+    cout<<""<<endl; cout <<"You hear wings flapping!!!"<<endl; cout <<""<<endl;
 }
 
 

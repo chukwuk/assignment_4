@@ -43,5 +43,5 @@ int Gold::return_yco() {
 }
 
 void Gold::display_event() {
-    cout <<"You see a glimmer nearby!!!"<<endl;
+    cout<<""<<endl; cout <<"You see a glimmer nearby!!!"<<endl; cout<<""<<endl;
 }

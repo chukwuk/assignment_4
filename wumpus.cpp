@@ -45,6 +45,6 @@ void Wumpus::move_wumpus(int xx, int yy) {
 }
 
 void Wumpus::display_event() {
-   cout <<"You smell a terrible stench!!!"<<endl;
+   cout<<""<<endl; cout <<"You smell a terrible stench!!!"<<endl; cout<<""<<endl;
 }
 

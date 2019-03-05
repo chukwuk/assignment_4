@@ -126,6 +126,6 @@ int main( int argc, char* argv[] ) {
    }
    }
    cout <<""<<endl; cout <<"Thank you for playing the game!!!"<<endl;
-
+   cout<<" "<<endl;
    return 0;
 }

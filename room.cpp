@@ -368,11 +368,13 @@ void Room::shoot_arrow(int num) {
 void Room::event_display() {
      if ((this->x==this->events_4->return_xco()) && (this->y==this->events_4->return_yco()) && this->gold_pick == 0 ) {
          this->gold_pick = 1;
+         cout<<""<<endl;
 //         this->room_grid.at(this->events_4->return_yco()).at(this->events_4->return_xco()) = " * ";
          cout <<"You got the gold!!! hahahaha. You have to find  a way out of the cave"<<endl;
      }
      if ((this->x==this->events_3->return_xco()) && (this->y==this->events_3->return_yco())  ) {
          this->room_grid.at(this->y).at(this->x) = "   ";
+         cout <<" "<<endl; cout <<"You entered a room full of bats. so sad!!!"<<endl; cout<<" "<<endl;
          do {
              this->x = rand() % this->cols;
              this->y = rand() % this->rows;
@@ -548,6 +550,7 @@ void Room::display_grid() {
    if (this->gold_pick==0) {
    this->room_grid.at(this->events_4->return_yco()).at(this->events_4->return_xco()) = " g ";
    } */
+    cout<<" "<<endl;
     cout << this->grid_array << endl;
     for (int i = 0; i < this->rows; i++) {
       for (int j = 0; j < this->cols+1; j++) {
@@ -559,7 +562,7 @@ void Room::display_grid() {
     cout <<endl;
     cout << this->grid_array << endl;
     }
-
+    cout<<" "<<endl;
 }
 
 /******************************************************
@@ -613,6 +616,7 @@ void Room::move_player(int num) {
 
 
 Room::~Room() {
+    cout<<""<<endl;
     cout <<"Destructor called from Room"<<endl;
     delete this->cord_x;
     delete this->cord_y;

@@ -40,7 +40,7 @@ int Pit::return_yco() {
 }
 
 void Pit::display_event() {
-    cout <<"You feel a breeze!!!"<<endl;
+    cout<<""<<endl; cout <<"You feel a breeze!!!"<<endl; cout<<""<<endl;
 }
 
 
