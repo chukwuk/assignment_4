@@ -618,8 +618,8 @@ void Room::move_player(int num) {
 Room::~Room() {
     cout<<""<<endl;
     cout <<"Destructor called from Room"<<endl;
-    delete this->cord_x;
-    delete this->cord_y;
+    delete []  this->cord_x;
+    delete [] this->cord_y;
     delete this->events_1;
     delete this->events_2;
     delete this->events_3;
